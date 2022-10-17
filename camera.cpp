@@ -21,5 +21,5 @@ void Camera::update(){
 
 void Camera::translate(glm::vec3 v){
 	position+=v;
-	view = glm::translate(view, v*-1.0f);
+	view = glm::translate(view, v*-1.0f); 
 }

@@ -54,7 +54,7 @@ int main(){
 	}
 	std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
 	
-	glEnable(GL_DEBUG_OUTPUT);
+	glEnable(GL_DEBUG_OUTPUT); 
 	glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
 	glDebugMessageCallback(openGLDebugCallback,0);
 	
@@ -69,7 +69,7 @@ int main(){
 	uint indices[] = {
 		0,1,2,0,2,3
 	};
-	uint numIndices=6;
+	uint numIndices=6; 
 			
 		
 	VertexBuffer vertexBuffer(vertices, numVertices, sizeof(Vertex));
@@ -100,14 +100,13 @@ int main(){
 	Uint64 start=SDL_GetPerformanceCounter();
 	Uint64 stop=0;
 	
-	float cameraSpeed=6.0f;
+	float cameraSpeed=6.0f;  
 	
 	SDL_SetRelativeMouseMode(SDL_TRUE);
 	
 	bool w_pressed=false, a_pressed=false, s_pressed=false, d_pressed=false;
 	
 	Renderer renderer;
-	
 	
 	while(run){		
 		SDL_Event event;
